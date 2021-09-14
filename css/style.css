@@ -1,0 +1,180 @@
+header {
+  height: 74px;
+  color: #fff;
+  background-color: #1b1310;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-list {
+  height: 74px;
+  padding: 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  /* メニューの右側に余白 */
+  margin-right: 55px;
+}
+
+.fv {
+  height: 100vh;
+  /* 背景画像の設定 */
+  background-image: url("../img/fv-bgi@2x.jpg");
+  background-size: cover;
+  /* メインコピーの上下左右中央寄せ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-copy {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+  padding: 34px 42px;
+}
+
+.section-wrapper {
+  padding: 100px 10% 50px;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+.content-inner-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.text-wrapper_service {
+  max-width: 480px;
+}
+
+.content-inner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  max-width: 320px;
+  box-shadow: 0px 0px 6px rgba(27, 19, 16, 0.4);
+}
+
+.text-news {
+  color: #141414;
+  padding: 33px 25px;
+}
+
+.form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-part {
+  margin-top: 16px;
+}
+
+.text-box {
+  width: 100%;
+}
+
+.form-send {
+  margin-top: 50px;
+  text-align: center;
+}
+.form-btn {
+  display: inline-block;
+  padding: 20px 97px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1b1310;
+  box-shadow: 0px 0px 6px #1b1310;
+}
+
+.header-item {
+  display: flex;
+}
+
+footer {
+  color: #fff;
+  background-color: #1b1310;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+
+  .fv {
+    width: 100%;
+    background-image: url("../img/fv-bgi_sp@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main-copy {
+    font-size: 1.5rem;
+  }
+
+  .content-inner {
+    flex-direction: column;
+  }
+
+  .content-inner-reverse {
+    flex-direction: column;
+  }
+
+  .card-item {
+    margin: 50px 0 0;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+  .nav-item {
+    margin: unset;
+    font-size: 0.8rem;
+  }
+  .nav-list {
+    background-color: #1b1310;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    width: 100%;
+    padding: unset;
+    justify-content: space-around;
+  }
+
+  .header-item {
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  footer {
+    margin-bottom: 74px;
+  }
+}
